@@ -1,15 +1,18 @@
 {
-  "name": "practice-serverless-node-api",
-  "version": "1.0.0",
-  "description": "",
-  "dependencies": {
-    "@neondatabase/serverless": "^0.9.4",
-    "drizzle-orm": "^0.31.2",
-    "express": "^4.19.2",
-    "serverless-http": "^3.2.0"
-  },
-  "devDependencies": {
-    "drizzle-kit": "^0.22.8",
-    "serverless-offline": "^13.6.0"
-  }
+    "name": "practice-serverless-node-api",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "dev": "sls offline --stage dev"
+    },
+    "dependencies": {
+        "@neondatabase/serverless": "^0.9.4",
+        "drizzle-orm": "^0.31.2",
+        "express": "^4.19.2",
+        "serverless-http": "^3.2.0"
+    },
+    "devDependencies": {
+        "drizzle-kit": "^0.22.8",
+        "serverless-offline": "^13.6.0"
+    }
 }
