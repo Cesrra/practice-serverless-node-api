@@ -20,4 +20,11 @@ app.use((req, res, next) => {
   });
 });
 
+//Server full app
+// app.listen(3000, () => {
+//   console.log('Server - Listening on port 3000')
+// })
+//Intall Serverless Offline -> npm install --save-dev serverless-offline@latest
+  //Run --> serverless offline
+
 exports.handler = serverless(app);

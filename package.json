@@ -9,6 +9,7 @@
     "serverless-http": "^3.2.0"
   },
   "devDependencies": {
-    "drizzle-kit": "^0.22.8"
+    "drizzle-kit": "^0.22.8",
+    "serverless-offline": "^13.6.0"
   }
 }
