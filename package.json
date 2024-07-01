@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "",
     "scripts": {
-        "dev": "sls offline --stage dev"
+        "dev": "sls offline --stage develop"
     },
     "dependencies": {
         "@neondatabase/serverless": "^0.9.4",
@@ -13,6 +13,7 @@
     },
     "devDependencies": {
         "drizzle-kit": "^0.22.8",
+        "serverless-dotenv-plugin": "^6.0.0",
         "serverless-offline": "^13.6.0"
     }
 }

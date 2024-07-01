@@ -4,10 +4,13 @@ org: cesrra
 app: node-express-api
 # "service" is the name of this project. This will also be added to your AWS resource names.
 service: practice-serverless-node-api
+useDotenv: true
 
 provider:
   name: aws
   runtime: nodejs20.x
+  environment:
+    DATABASE_URL: ${env:DATABASE_URL, "fallback value"}
 
 functions:
   api:
@@ -16,3 +19,4 @@ functions:
       - httpApi: "*"
 plugins:
   - serverless-offline
+  - serverless-dotenv-plugin
